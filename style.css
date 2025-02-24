@@ -1,0 +1,176 @@
+/*
+******************************
+Formatação Global
+
+****************************
+ */
+.borda{
+    border: 1px solid red;
+}
+
+h2{
+    color: white;
+}
+h5{
+    color: white;
+}
+/*
+*****************************
+ Container Inicial
+ **************************
+ 
+ */
+
+ .containerInicial{
+    height: 100vh;
+    background-color: black;
+ }
+
+ .containerInicial .container{
+    display: flex;
+    
+ }
+
+
+
+
+ .containerTrafegoPago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+ }
+
+ .containerTrafegoPago .container{
+    padding: 15px 20px;
+    width: 35%;
+    height: 85%;
+    background: url('./img/mentoria-joao-vitor.png') no-repeat;
+    position: relative;
+    background-size: contain;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+ }
+ .containerTrafegoPago .container .conteudo{
+    width: 45%;
+ }
+
+ .containerTrafegoPago .container .tituloMentoria{
+    color: white;
+    width: 50%;
+ }
+
+
+ .tituloMentoria {
+    text-align: center;
+    position: relative;
+}
+
+.tituloMentoria h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* Cor do texto dourado */
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.6em;
+}
+
+.tituloMentoria h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 10%, rgba(255, 215, 0, 0.2) 50%, transparent 70%);
+    transform: translate(-50%, -50%) rotate(45deg);
+    filter: blur(10px);
+    z-index: 1;
+    box-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.8), 
+        0 0 40px rgba(255, 215, 0, 0.6), 
+        0 0 60px rgba(255, 215, 0, 0.4);
+}
+
+.tituloMentoria h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Cor do texto */
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 0.7em;
+}
+
+.tituloMentoria h5::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    animation: bordaAnimada 2s infinite ease-in-out;
+}
+
+@keyframes bordaAnimada {
+    0% {
+        width: 0;
+        left: 50%;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 0;
+    }
+}
+
+
+
+
+ .containerTrafegoPago .container .conteudoMentoria{
+    border: 2px Dashed white;
+    padding: 15px 20px;
+ }
+
+ .containerTrafegoPago .container .containerButton{
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+ }
+
+ .custom-button {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.365) 0%, #202020 30%, #fb7043 70%, rgba(243, 88, 39, 0.195) 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    letter-spacing: 1.5em;
+
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(251, 112, 67, 0.5);
+}
+
+.custom-button:active {
+    transform: scale(0.98);
+}
+
+.containerTrafegoPago .containerJaoVitor{
+    height: 100%;
+    width: 100%;
+}
