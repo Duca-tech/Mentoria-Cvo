@@ -23,6 +23,23 @@ body, html{
   font-weight: 300;
   font-style: normal;
 }
+
+
+/* 
+**********************************
+formatacao botoes flex 
+***********************
+*/
+.flexbuttons{
+    display: flex;
+    padding: 15px;
+}
+.flexbuttons button{
+    margin: 1.1em;
+}
+
+
+
 /*
 *****************************
  Container Inicial
@@ -52,6 +69,10 @@ body, html{
     align-items: center;
     flex-direction: column;
     padding: 15px 25px;
+}
+
+.containerInicial .container .autores h2{
+    letter-spacing: 1.15em;
 }
 
 .containerInicial .container .autores p{
