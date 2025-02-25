@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 /*
 ******************************
 Formatação Global
@@ -8,11 +10,18 @@ Formatação Global
     border: 1px solid red;
 }
 
-h2{
+h2, h5, p{
     color: white;
 }
-h5{
-    color: white;
+p{
+    font-size: 1.3em;
+}
+
+body, html{
+    font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 /*
 *****************************
@@ -27,12 +36,31 @@ h5{
  }
 
  .containerInicial .container{
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 10px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* (Opcional) Centraliza horizontalmente */
+  height: 80%;
  }
 
 
+.containerInicial .container .autores{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 25px;
+}
 
+.containerInicial .container .autores p{
+    padding: 25px;
+    border: 1px Dashed #dfdfdf;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
 
  .containerTrafegoPago{
     display: flex;
