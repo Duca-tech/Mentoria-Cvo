@@ -6,22 +6,26 @@ Formatação Global
 
 ****************************
  */
-.borda{
+.borda {
     border: 1px solid red;
 }
 
-h2, h5, p{
+h2,
+h5,
+p {
     color: white;
 }
-p{
+
+p {
     font-size: 1.3em;
 }
 
-body, html{
+body,
+html {
     font-family: "Rubik", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
@@ -30,11 +34,12 @@ body, html{
 formatacao botoes flex 
 ***********************
 */
-.flexbuttons{
+.flexbuttons {
     display: flex;
     padding: 15px;
 }
-.flexbuttons button{
+
+.flexbuttons button {
     margin: 1.1em;
 }
 
@@ -47,22 +52,26 @@ formatacao botoes flex
  
  */
 
- .containerInicial{
+.containerInicial {
     height: 100vh;
     background-color: black;
- }
+}
 
- .containerInicial .container{
+.containerInicial .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
-    gap: 10px; /* Espaçamento entre os itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-  justify-content: center; /* (Opcional) Centraliza horizontalmente */
-  height: 80%;
- }
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas de tamanho igual */
+    gap: 10px;
+    /* Espaçamento entre os itens */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
+    justify-content: center;
+    /* (Opcional) Centraliza horizontalmente */
+    height: 80%;
+}
 
 
-.containerInicial .container .autores{
+.containerInicial .container .autores {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -71,11 +80,11 @@ formatacao botoes flex
     padding: 15px 25px;
 }
 
-.containerInicial .container .autores h2{
+.containerInicial .container .autores h2 {
     letter-spacing: 1.15em;
 }
 
-.containerInicial .container .autores p{
+.containerInicial .container .autores p {
     padding: 25px;
     border: 1px Dashed #dfdfdf;
     border-top-right-radius: 25px;
@@ -83,15 +92,15 @@ formatacao botoes flex
     border-bottom-left-radius: 25px;
 }
 
- .containerTrafegoPago{
+.containerTrafegoPago {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative;
- }
+}
 
- .containerTrafegoPago .container{
+.containerTrafegoPago .container {
     padding: 15px 20px;
     width: 35%;
     height: 85%;
@@ -102,19 +111,20 @@ formatacao botoes flex
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
- }
- .containerTrafegoPago .container .conteudo{
-    width: 45%;
- }
 
- .containerTrafegoPago .container .tituloMentoria{
+}
+
+.containerTrafegoPago .container .conteudo {
+    width: 45%;
+}
+
+.containerTrafegoPago .container .tituloMentoria {
     color: white;
     width: 50%;
- }
+}
 
 
- .tituloMentoria {
+.tituloMentoria {
     text-align: center;
     position: relative;
 }
@@ -122,7 +132,8 @@ formatacao botoes flex
 .tituloMentoria h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: white; /* Cor do texto dourado */
+    color: white;
+    /* Cor do texto dourado */
     position: relative;
     display: inline-block;
     letter-spacing: 0.6em;
@@ -139,16 +150,17 @@ formatacao botoes flex
     transform: translate(-50%, -50%) rotate(45deg);
     filter: blur(10px);
     z-index: 1;
-    box-shadow: 
-        0 0 20px rgba(255, 215, 0, 0.8), 
-        0 0 40px rgba(255, 215, 0, 0.6), 
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.8),
+        0 0 40px rgba(255, 215, 0, 0.6),
         0 0 60px rgba(255, 215, 0, 0.4);
 }
 
 .tituloMentoria h5 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff; /* Cor do texto */
+    color: #ffffff;
+    /* Cor do texto */
     position: relative;
     display: inline-block;
     text-transform: uppercase;
@@ -172,10 +184,12 @@ formatacao botoes flex
         width: 0;
         left: 50%;
     }
+
     50% {
         width: 100%;
         left: 0;
     }
+
     100% {
         width: 0;
         left: 0;
@@ -185,18 +199,18 @@ formatacao botoes flex
 
 
 
- .containerTrafegoPago .container .conteudoMentoria{
+.containerTrafegoPago .container .conteudoMentoria {
     border: 2px Dashed white;
     padding: 15px 20px;
- }
+}
 
- .containerTrafegoPago .container .containerButton{
+.containerTrafegoPago .container .containerButton {
     /* position: absolute; */
     width: 100%;
     text-align: center;
- }
+}
 
- .custom-button {
+.custom-button {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.365) 0%, #202020 30%, #fb7043 70%, rgba(243, 88, 39, 0.195) 100%);
     color: white;
     border: none;
@@ -219,7 +233,7 @@ formatacao botoes flex
     transform: scale(0.98);
 }
 
-.containerTrafegoPago .containerJaoVitor{
+.containerTrafegoPago .containerJaoVitor {
     height: 100%;
     width: 100%;
 }
