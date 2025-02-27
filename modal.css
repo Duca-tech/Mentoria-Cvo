@@ -93,22 +93,32 @@
 
 
 @media (max-width: 480px) {
+
   .modal-content {
       width: 90%;
-      height: 900px;
+      height: 65%;
       flex-direction: column;
+      overflow-x: hidden;
   }
 
+  .modal-content h1{
+    padding: 0 20px 0 20px;
+  }
+
+  .modal-content h4{
+    padding: 0 20px 0 20px;  }
+
   .modal-img {
-      width: 100%;
-      height: auto;
+    display: none;
   }
 
 
   .modal-text {
-      width: 100%;
-      padding: 20px;
-  }
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    box-sizing: border-box; /* Adicionado */
+}
 
   .modal-text p {
       margin: 20px 20px}
@@ -123,9 +133,15 @@
       height: 25px;
   }
 
+  .icons{
+    padding: 0 20px 0 20px;
+  }
+
   .socialMedia-modal {
       margin-bottom: 20px;
   }
 
 
 }
+
+
