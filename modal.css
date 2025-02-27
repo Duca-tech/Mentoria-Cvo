@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+}
+  
+.modal-content {
+    background-color: #ECBF0F;
+    width: 80%;
+    height: 80%;
+    padding: 0px;
+    display: flex; /* Ativa o flexbox */
+    align-items: stretch; /* Alinha os itens verticalmente */
+    overflow: hidden; /* Garante que a imagem não vaze do contêiner */
+}
+
+  
+.modal-text {
+    color: black;
+    font-family: 'Montserrat';
+    padding-left: 50px;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%; /* Importante para o alinhamento vertical do socialMedia-modal */
+}
+
+
+  .modal-text h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+
+  .modal-text h4{
+    margin-top: 0px;
+    font-weight: lighter;
+  }
+
+  .modal-text p{
+    margin: 20px 120px 20px 0px;
+    font-size: 20px;
+    font-weight: Thin;
+  }
+  
+  .modal-text h2 {
+    margin-top: 0; /* Remove a margem superior padrão do h2 */
+  }
+
+  .socialMedia-modal {
+    margin-top: auto; /* Empurra para a parte inferior */
+    margin-bottom: 50px; /* Define a distância de 50px da borda inferior */
+    color: black;
+}
+
+  .socialMedia-modal p{
+    color: black;
+  }
+
+
+  .modal-img {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  gap: 10px;
+}
+    
+
+
