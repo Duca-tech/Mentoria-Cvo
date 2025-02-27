@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .modal {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -90,6 +90,42 @@
   height: 50px;
   gap: 10px;
 }
-    
 
 
+@media (max-width: 480px) {
+  .modal-content {
+      width: 90%;
+      height: 900px;
+      flex-direction: column;
+  }
+
+  .modal-img {
+      width: 100%;
+      height: auto;
+  }
+
+
+  .modal-text {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .modal-text p {
+      margin: 20px 20px}
+
+      
+  .modal-text h1 {
+      font-size: 30px;
+  }
+
+  .icons img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .socialMedia-modal {
+      margin-bottom: 20px;
+  }
+
+
+}
