@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    overflow-x: hidden;
+
+}
+  
+.modal-content {
+    background-color: #ECBF0F;
+    width: 80%;
+    height: 85%;
+    padding: 0px;
+    display: flex; /* Ativa o flexbox */
+    align-items: stretch; /* Alinha os itens verticalmente */
+    overflow: hidden; /* Garante que a imagem não vaze do contêiner */
+}
+
+  
+.modal-text {
+    color: black;
+    font-family: 'Montserrat';
+    padding-left: 50px;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%; /* Importante para o alinhamento vertical do socialMedia-modal */
+}
+
+
+  .modal-text h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+
+  .modal-text h4{
+    margin-top: 0px;
+    font-weight: lighter;
+  }
+
+  .modal-text p{
+    margin: 20px 120px 20px 0px;
+    font-size: 20px;
+    font-weight: Thin;
+  }
+  
+  .modal-text h2 {
+    margin-top: 0; /* Remove a margem superior padrão do h2 */
+  }
+
+  .socialMedia-modal {
+    margin-top: auto; /* Empurra para a parte inferior */
+    margin-bottom: 50px; /* Define a distância de 50px da borda inferior */
+    color: black;
+}
+
+  .socialMedia-modal p{
+    color: black;
+  }
+
+
+  .modal-img {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  gap: 10px;
+}
+
+.close{
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+
+  .modal{
+    max-width: 100vh;
+    overflow-x: hidden;
+  }
+
+  .modal-content {
+      width: 90%;
+      height: 80%;
+      flex-direction: column;
+      overflow-x: hidden;
+
+  }
+
+  .modal-content h1{
+    padding: 0 20px 0 20px;
+  }
+
+  .modal-content h4{
+    padding: 0 20px 0 20px;  }
+
+  .modal-img {
+    display: none;
+  }
+
+
+  .modal-text {
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    box-sizing: border-box; /* Adicionado */
+}
+
+  .modal-text p {
+      margin: 20px 20px}
+
+      
+  .modal-text h1 {
+      font-size: 30px;
+  }
+
+  .icons img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .icons{
+    padding: 0 20px 0 20px;
+  }
+
+  .socialMedia-modal {
+      margin-bottom: 20px;
+  }
+
+  .close{
+    display: block;
+  }
+
+  .close button{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .close img{
+    width: 30px;
+    height: 30px;
+
+  }
+
+
+}
+
+
