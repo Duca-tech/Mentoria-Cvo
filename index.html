@@ -6,66 +6,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentoria CVO</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.28.1/tabler-icons.min.css"
+        integrity="sha512-UuL1Le1IzormILxFr3ki91VGuPYjsKQkRFUvSrEuwdVCvYt6a1X73cJ8sWb/1E726+rfDRexUn528XRdqrSAOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="containerInicial">
         <div class="containerTitulo">
-            Mentoria CVo
+            <h1>CONHECIMENTO VALE OURO</h1>
+
+            <h3>APRENDA <span>e</span> DESENVOLVA-SE <span>DIRETAMENTE</span> COM GRANDES PLAYERS DO MERCADO</h3>
         </div>
         <div class="container">
-            <div class="autores borda">
-                <img src="./img/nelito6-removebg-preview.webp" alt="">
-                <h2>Nelito Filho</h2>
-                <p>Sou Nelito Filho, enfermeiro e empreendedor digital, especialista em tráfego de influencer e
-                    estratégias digitais, faturando apenas com tráfego orgânico</p>
-                <div class="flexbuttons">
-                    <button>
-                        
-                    </button>
-                    <button>
+            <div class="carrossel">
+                <div class="carrossel-item  item-1" data-item="1">
+                    <div class="autores  Nelito">
+                        <img width="433px" height="570px" src="./img/webp/nelito6-removebg-preview.webp"
+                            class="formatoImg" id="nelito" alt="">
+                    </div>
+                    <div class="autoresDescricao" data-vinc="joaoVitor">
+                        <button class="custom-button">
+                            Nelito Filho
+                        </button>
+                        <p>Sou Nelito Filho, enfermeiro e empreendedor digital, especialista em tráfego de influencer e
+                            estratégias digitais, faturando apenas com tráfego orgânico.</p>
+                        <div class="flexbuttons">
+                        </div>
 
-                    </button>
+                    </div>
+                </div>
+                <div class="carrossel-item item-2" data-item="2">
+                    <div class="autores JoaoVitor">
+                        <img width="433px" height="570px" src="./img/webp/joaovitu.webp" class="formatoImg" alt=""
+                            id="joaoVitor">
+                    </div>
+                    <div class="autoresDescricao" data-desc-item="2" data-vinc="nelito">
+                        <button class="custom-button">
+                            João Vitor
+                        </button>
+                        <p>
+                            Sou João Vitor, Empresário e Palestrantre, especialista em comunicação Pessoal e vendas.
+                        </p>
+                    </div>
+                </div>
+                <div class="carrossel-item item-3" data-item="3">
+                    <div class="autores  Nelito">
+                        <img width="433px" height="570px" src="./img/webp/nelito6-removebg-preview.webp"
+                            class="formatoImg" id="nelito" alt="">
+                    </div>
+                    <div class="autoresDescricao" data-desc-item="2" data-vinc="joaoVitor">
+                        <button class="custom-button">
+                            Nelito Filho
+                        </button>
+                        <p>Sou Nelito Filho, enfermeiro e empreendedor digital, especialista em tráfego de influencer e
+                            estratégias digitais, faturando apenas com tráfego orgânico.</p>
+                        <div class="flexbuttons">
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="autores borda">
-                <img src="./" alt="">
-            </div>
-            <div class="autores borda">
-
+            <div class="containerButtonCarrossel">
+                <button aria-label="Anterior" class="previus">
+                    <i class="ti ti-arrow-narrow-left"></i>
+                </button>
+                <button aria-label="Proximo" class="next">
+                    <i class="ti ti-arrow-narrow-right"></i>
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="containerTrafegoPago">
+    <div class="containerServicos">
+        <div class="titulo">
+            <Button class="custom-button"><i class="ti ti-social"></i>Especialidades</Button>
+            <h2>Veja nosso <span>Repertório</span></h4>
+        </div>
+        <div id="card-area">
+            <div class="wrapper">
+                <div class="box-area">
+                    <div class="box">
+                        <i class="ti ti-coin-monero-filled"></i>
+                        <div class="descricao">
+                            <h3>Tráfego Pago</h3>
+                            <p>Técnicas para maior Captação de Clientes + Configuração e estratégias de Tráfego.</p>
+                        </div>
+                        <div class="rodape">
+                            <i class="ti ti-brand-instagram-filled"></i>
+                            <i class="ti ti-brand-facebook-filled"></i>
+                            <i class="ti ti-brand-whatsapp-filled"></i>
+                        </div>
+                    </div>
+
+                    <div class="box">
+
+                        <i class="ti ti-brand-databricks"></i>
+                        <div class="descricao">
+                            <h3>Produtos Digitais</h3>
+                            <p>Info Produtos que agregam valor e com capacidade de alta rentabilidade</p>
+                        </div>
+
+                        <div class="rodape">
+                            <i class="ti ti-brand-instagram-filled"></i>
+                            <i class="ti ti-brand-facebook-filled"></i>
+                            <i class="ti ti-brand-whatsapp-filled"></i>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <i class="ti ti-world-www"></i>
+                        <div class="descricao">
+                            <h3>Criação de Site</h3>
+                            <p>Saiba de como Negociar um site com Zero Orçamento</p>
+                        </div>
+
+                        <div class="rodape">
+                            <i class="ti ti-brand-instagram-filled"></i>
+                            <i class="ti ti-brand-facebook-filled"></i>
+                            <i class="ti ti-brand-whatsapp-filled"></i>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <i class="ti ti-brand-meta"></i>
+                        <div class="descricao">
+                            <h3>Alavancagem das Redes Sociais</h3>
+                            <p>A configuração para captação e maior alcance do seu negócio</p>
+                        </div>
+
+                        <div class="rodape">
+                            <i class="ti ti-brand-instagram-filled"></i>
+                            <i class="ti ti-brand-facebook-filled"></i>
+                            <i class="ti ti-brand-whatsapp-filled"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="containerMentoria">
+
         <div class="container">
-            <div class="conteudo">
-                <div class="tituloMentoria">
-                    <h2>MENTORIA CVO</h2>
-                    <h5>CONHECIMENTO VALE OURO</h5>
-                </div>
-                <div class="conteudoMentoria">
-                    <h2> A DETERMINAÇÃO SEMPRE CONDUZ AO SUCESSO</h2>
+            <div class="titulo">
+                <h3>Veja Nossos Serviços que ofertamos para o <span>melhor resultado</span> para você</h3>
+                <button class="custom-button">Marque uma Consultoria</button>
+            </div>
+            <div class="carrossel-mentoria">
+                <div class="carrossel-mentoria-item" data-index="1">
+                    <div class="consultaMentoria" data-modulo="1">
+                        <div class="conteudo">
+                            <div class="tituloMentoria">
+                                <h2>MENTORIA CVO</h2>
+                                <h5>CONHECIMENTO VALE OURO</h5>
+                            </div>
+                            <div class="conteudoMentoria">
+                                <h2> A DETERMINAÇÃO SEMPRE CONDUZ AO SUCESSO</h2>
+                            </div>
+
+                            <h2>EM BREVE</h2>
+                        </div>
+
+                    </div>
+                    <div class="descricaoMentoria borda">
+                        <div class="titulo">
+                            <h3>
+                                Mentoria exclusiva para o seu Negócio
+                            </h3>
+                        </div>
+
+                        <div class="desc">
+                            <p>Entendemos sua Necessidade, montamos um Plano para Alavancagem no seu meio digital e
+                                destravar o Potencial do seu Negócio.</p>
+                        </div>
+
+                        <div class="desc">
+                            <p>Em breve, Lançaremos um curso sobre Cada Módulo utilizado no Meio Digital</p>
+                        </div>
+
+                        <div class="desc">
+                            <p>Cresça com a gente e se torna única no seu mercado.</p>
+                        </div>
+
+                        <div class="rodape">
+                            <a href="">
+                                <i class="ti ti-brand-instagram"></i>
+
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <h2>EM BREVE</h2>
 
-                <div class="containerButton">
-                    <button class="custom-button">
-                        JOÃO VITOR
-                    </button>
+                <div class="carrossel-mentoria-item mentoria-item-2" data-index="2">
+                    <div class="consultaMentoria" data-modulo="2">
+                        <div class="conteudo">
+                            <div class="tituloMentoria">
+                                <h2>MENTORIA CVO</h2>
+                                <h5>CONHECIMENTO VALE OURO</h5>
+                            </div>
+                            <div class="conteudoMentoria">
+                                <h2> A DETERMINAÇÃO SEMPRE CONDUZ AO SUCESSO</h2>
+                            </div>
+
+                            <h2>EM BREVE</h2>
+                        </div>
+
+                    </div>
+                    <div class="descricaoMentoria borda">
+                        <div class="titulo">
+                            <h3>
+                                Mentoria exclusiva para o seu Negócio
+                            </h3>
+                        </div>
+
+                        <div class="desc">
+                            <p>Entendemos sua Necessidade, montamos um Plano para Alavancagem no seu meio digital e
+                                destravar o Potencial do seu Negócio.</p>
+                        </div>
+
+                        <div class="desc">
+                            <p>Em breve, Lançaremos um curso sobre Cada Módulo utilizado no Meio Digital</p>
+                        </div>
+
+                        <div class="desc">
+                            <p>Cresça com a gente e se torna única no seu mercado.</p>
+                        </div>
+
+                        <div class="rodape">
+                            <a href="">
+                                <i class="ti ti-brand-instagram"></i>
+
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
+
+            </div>
+            <div class="controlButtonCarroussel">
+                <button>
+                    Anterior
+                </button>
+                <button>
+                    Próximo
+                </button>
             </div>
 
 
-        </div>
-        <div class="containerJoaoVitor borda">
-            <img src="" alt="">
         </div>
     </div>
 </body>
 
 <script src="./script.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0/dist/js/tabler.min.js"></script> -->
 
 </html>
