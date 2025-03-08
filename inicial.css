@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
+/* Formatação Global */
+button{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    margin: 10px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+}
+
+button:hover {
+    box-shadow: 0 0 15px rgba(194, 157, 9, 0.8);
+    /* transform: scale(1.05);     */
+    cursor: pointer;
+}
+button:active {
+    /* transform: scale(1); */
+    box-shadow: 0 0 10px rgba(207, 176, 18, 0.8);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -50,20 +70,105 @@ body {
 .card-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 90%;
-    max-width: 1200px;
-    margin-top: 2px; /* Reduz ainda mais a margem superior dos cards */
+    max-width: 1920px;
+    margin-top: 2px;
+    position: relative;
+    min-height: 600px;
+    scroll-behavior: smooth;
+    overflow: hidden; /* Esconde os cards fora da área visível */
 }
 
 .card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     width: 23%;
-    min-width: 00px;
-    margin: 20px;
+    margin: 0 10px;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    transition: all 0.35s ease-in-out;
+    min-height: 500px;
 }
+
+.card-1{
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+.card-2{
+    transform: translateX(-50%) scale(1.1);
+    left: 50%;
+    opacity: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.card-3{
+    left: 75%;
+    transform: translateX(-50%);
+
+}
+
+.card.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.card.next, .card.prev {
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+.info-paragraph {
+    display: none; /* Inicialmente oculta */
+    margin-top: 20px;
+}
+
+.info-paragraph.active {
+    display: block;
+}
+
+.info-paragraph.active h2,
+.info-paragraph.active p,
+.info-paragraph.active button{
+    opacity: 0;   /* Começam invisíveis */
+    transform: translateY(20px); /* Começam ligeiramente deslocadas para baixo */
+    animation: aparecer 2s forwards; /* Aparecem com uma animação */
+}
+
+.info-paragraph.active h2{
+    animation-delay: 0s; /* O título aparece primeiro */
+
+}
+.info-paragraph.active p{
+    animation-delay: 0.5s; /* O texto aparece 1 segundo depois do título */
+
+}
+.info-paragraph.active button{
+    animation-delay: 0.8s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1920px;
+    margin-top: 20px;
+}
+
 
 .card-content {
     display: flex;
@@ -76,6 +181,10 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.container-inicial .buttons-controls button{
+    background-color: #ECBF0F;
 }
 
 .info-paragraph {
