@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.container-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.header-inicial {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.inicial-tittle {
+    position: relative;
+}
+
+.header-inicial h1 {
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #ECBF0F;
+    font-weight: 100;
+}
+
+.header-inicial h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #ECBF0F;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 2px; /* Reduz ainda mais a margem superior dos cards */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 23%;
+    min-width: 00px;
+    margin: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.card-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-paragraph {
+    text-align: center;
+    margin-top: 10px;
+    padding:  0px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2px; /* Reduz ainda mais a margem inferior do parágrafo */
+}
+
+.info-paragraph h2 {
+    color: #ECBF0F;
+    font-weight: bold;
+    margin-top: 0;         /* Zera a margem superior */
+    margin-bottom: 0;      /* Zera a margem inferior */
+}
+
+
+.info-paragraph p {
+    margin-top: 5px;
+    color: white;
+    font-weight: normal
+}
+
+.title-underline {
+    width: 100vw;
+    height: 2px;
+    background-color: #ECBF0F;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.conheca-nelito {
+    background-color: #ECBF0F;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0; /* Remove a margem superior */
+}

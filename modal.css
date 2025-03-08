@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -17,7 +17,7 @@
 .modal-content {
     background-color: #ECBF0F;
     width: 80%;
-    height: 85%;
+    height: 95%;
     padding: 0px;
     display: flex; /* Ativa o flexbox */
     align-items: stretch; /* Alinha os itens verticalmente */
@@ -39,17 +39,18 @@
 
 
   .modal-text h1{
-    font-weight: bold;
+    font-weight: bold; 
     font-size: 50px;
     margin-bottom: 0px;
   }
 
   .modal-text h4{
     margin-top: 0px;
-    font-weight: lighter;
+    font-weight: bold;
   }
 
   .modal-text p{
+    color: white;
     margin: 20px 120px 20px 0px;
     font-size: 20px;
     font-weight: Thin;
@@ -174,5 +175,4 @@
 
 
 }
-
 
