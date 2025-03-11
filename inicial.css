@@ -90,7 +90,7 @@ body {
     position: absolute;
     top: 0;
     transition: all 0.35s ease-in-out;
-    min-height: 500px;
+    min-height: 500px;  
 }
 
 .card-1{
@@ -102,7 +102,7 @@ body {
     transform: translateX(-50%) scale(1.1);
     left: 50%;
     opacity: 1;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 16px #ECBF0F, 0 0 10px #ECBF0F;
 }
 
 .card-3{
@@ -163,10 +163,10 @@ body {
 
 .buttons-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
     max-width: 1920px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 

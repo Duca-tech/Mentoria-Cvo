@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+.container-service {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: black;
+    color: #ECBF0F;
+    font-family: 'Montserrat';
+}
+
+.container-service h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ECBF0F;
+    font-weight: 100;
+}
+
+.container-service .cards-service {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-service .card-service {
+    width: 30%;
+    min-width: 300px;
+    background-color: none;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: solid 1px #ECBF0F;
+    transition: border 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Adicionando transições */
+}
+
+.container-service .card-service:hover {
+    border: solid 1px #ECBF0F; /* Cor neon da borda */
+    box-shadow: 0 0 10px #ECBF0F, 0 0 20px #ECBF0F; /* Efeito neon da sombra */
+    color: #ECBF0F; /* Cor neon do texto */
+    cursor: pointer;
+}
+
+.container-service .card-service h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffc107;
+    text-align: center;
+    transition: color 0.3s ease; /* Adicionando transição */
+}
+
+.container-service .card-service:hover h3 {
+    color: #ECBF0F; /* Cor neon do título */
+}
+
+.container-service .card-service p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    transition: color 0.3s ease; /* Adicionando transição */
+}
+
+.container-service .card-service:hover p {
+    color: #ECBF0F; /* Cor neon do parágrafo */
+}
+
+@media (max-width: 468px) {
+    .container-service .cards-service {
+        flex-direction: column; /* Empilha os cards */
+        align-items: center; /* Centraliza os cards */
+    }
+
+    .container-service .card-service {
+        width: 90%; /* Ajusta a largura dos cards para ocupar 90% da tela */
+        min-width: auto; /* Remove a largura mínima */
+        margin: 20px 0; /* Ajusta a margem */
+    }
+}
