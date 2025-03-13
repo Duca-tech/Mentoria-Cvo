@@ -1,43 +1,52 @@
+/* Importação da fonte Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
-/* Formatação Global */
-button{
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 1.2em;
-    margin: 10px;
-    transition: box-shadow 0.3s ease, transform 0.2s ease;
-
+/* Reset e Configurações Globais */
+html {
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem a largura total */
 }
-
-button:hover {
-    box-shadow: 0 0 15px rgba(194, 157, 9, 0.8);
-    /* transform: scale(1.05);     */
-    cursor: pointer;
-}
-button:active {
-    /* transform: scale(1); */
-    box-shadow: 0 0 10px rgba(207, 176, 18, 0.8);
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100vh; /* Garante que o body ocupa toda a altura da viewport */
     background-color: black;
     font-family: 'Montserrat';
     color: white;
+    overflow-x: hidden; /* Remove o scroll horizontal */
 }
 
+/* Estilos dos Botões */
+button {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    margin: 10px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 15px rgba(194, 157, 9, 0.8);
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 0 10px rgba(207, 176, 18, 0.8);
+}
+
+/* Estilos do Container Inicial */
 .container-inicial {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    font-family: 'Montserrat';
     color: white;
 }
 
+/* Estilos do Cabeçalho Inicial */
 .header-inicial {
     text-align: center;
     margin-bottom: 5px;
@@ -50,7 +59,7 @@ body {
 .header-inicial h1 {
     font-size: 3em;
     letter-spacing: 0.3em;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 5px;
     color: #ECBF0F;
     font-weight: 100;
@@ -67,6 +76,7 @@ body {
     color: #ECBF0F;
 }
 
+/* Estilos do Container dos Cards */
 .card-container {
     display: flex;
     justify-content: center;
@@ -75,40 +85,38 @@ body {
     max-width: 1920px;
     margin-top: 2px;
     position: relative;
-    min-height: 600px;
+    min-height: 500px;
     scroll-behavior: smooth;
-    overflow: hidden; /* Esconde os cards fora da área visível */
+    overflow: hidden; /* Garante que os cards fora da área visível sejam ocultados */
 }
 
+/* Estilos dos Cards */
 .card {
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 23%;
     margin: 0 10px;
     opacity: 0.4;
     position: absolute;
     top: 0;
     transition: all 0.35s ease-in-out;
-    min-height: 500px;  
+    min-height: auto;
 }
 
-.card-1{
+.card-1 {
     left: 25%;
     transform: translateX(-50%);
 }
 
-.card-2{
-    transform: translateX(-50%) scale(1.1);
+.card-2 {
+    transform: translateX(-50%) scale(0.98);
     left: 50%;
     opacity: 1;
     box-shadow: 0 8px 16px #ECBF0F, 0 0 10px #ECBF0F;
 }
 
-.card-3{
+.card-3 {
     left: 75%;
     transform: translateX(-50%);
-
 }
 
 .card.active {
@@ -121,9 +129,15 @@ body {
     transform: scale(0.95);
 }
 
+/* Estilos dos Parágrafos de Informação */
 .info-paragraph {
-    display: none; /* Inicialmente oculta */
+    display: none;
     margin-top: 20px;
+    text-align: center;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2px;
 }
 
 .info-paragraph.active {
@@ -132,21 +146,21 @@ body {
 
 .info-paragraph.active h2,
 .info-paragraph.active p,
-.info-paragraph.active button{
-    opacity: 0;   /* Começam invisíveis */
-    transform: translateY(20px); /* Começam ligeiramente deslocadas para baixo */
-    animation: aparecer 2s forwards; /* Aparecem com uma animação */
+.info-paragraph.active button {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 2s forwards;
 }
 
-.info-paragraph.active h2{
-    animation-delay: 0s; /* O título aparece primeiro */
-
+.info-paragraph.active h2 {
+    animation-delay: 0s;
 }
-.info-paragraph.active p{
-    animation-delay: 0.5s; /* O texto aparece 1 segundo depois do título */
 
+.info-paragraph.active p {
+    animation-delay: 0.5s;
 }
-.info-paragraph.active button{
+
+.info-paragraph.active button {
     animation-delay: 0.8s;
 }
 
@@ -161,6 +175,7 @@ body {
     }
 }
 
+/* Estilos dos Botões de Controle */
 .buttons-controls {
     display: flex;
     justify-content: center;
@@ -169,49 +184,42 @@ body {
     margin-top: 5px;
 }
 
+.container-inicial .buttons-controls button {
+    background-color: #ECBF0F;
+}
 
+/* Estilos do Conteúdo dos Cards */
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .card-content img {
+    border-radius: 8px;
     width: 100%;
     height: auto;
     display: block;
 }
 
-.container-inicial .buttons-controls button{
-    background-color: #ECBF0F;
-}
-
-.info-paragraph {
-    text-align: center;
-    margin-top: 10px;
-    padding:  0px;
-    width: 80%;
-    max-width: 800px;
-    margin-bottom: 2px; /* Reduz ainda mais a margem inferior do parágrafo */
-}
-
+/* Estilos dos Títulos e Parágrafos de Informação */
 .info-paragraph h2 {
     color: #ECBF0F;
     font-weight: bold;
-    margin-top: 0;         /* Zera a margem superior */
-    margin-bottom: 0;      /* Zera a margem inferior */
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
 
 .info-paragraph p {
     margin-top: 5px;
     color: white;
-    font-weight: normal
+    font-weight: normal;
 }
 
+/* Estilos da Linha de Sublinhado */
 .title-underline {
-    width: 100vw;
+    width: 100%; /* Correção: largura relativa ao pai */
     height: 2px;
     background-color: #ECBF0F;
     position: absolute;
@@ -220,6 +228,7 @@ body {
     transform: translateX(-50%);
 }
 
+/* Estilos do Botão "Conheça Nelito" */
 .conheca-nelito {
     background-color: #ECBF0F;
     color: black;
@@ -229,5 +238,54 @@ body {
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 0; /* Remove a margem superior */
+    margin-top: 0;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 468px) {
+    .container-inicial {
+        padding: 10px;
+    }
+
+    .header-inicial h1 {
+        font-size: 2em;
+    }
+
+    .header-inicial h3 {
+        font-size: 1.2em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .card {
+        display: none;
+    }
+
+    .card-2 {
+        display: block;
+        width: 90%;
+        position: static;
+        margin: 10px 0;
+        transform: none;
+        left: auto;
+    }
+
+    .buttons-controls {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .buttons-controls button {
+        width: auto;
+        margin: 5px;
+    }
+
+    .info-paragraph {
+        display: none;
+    }
 }
