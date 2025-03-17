@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .modal {
-  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
