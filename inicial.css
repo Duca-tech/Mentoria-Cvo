@@ -19,6 +19,9 @@ body {
     overflow-x: hidden; /* Remove o scroll horizontal */
 }
 
+.borda{
+    border: 1px solid red;
+}
 /* Estilos dos Botões */
 button {
     padding: 10px;
@@ -98,8 +101,15 @@ button:active {
     opacity: 0.4;
     position: absolute;
     top: 0;
+    height: 100%;
     transition: all 0.35s ease-in-out;
     min-height: auto;
+    height: 100%;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 20px #ECBF0F, 0 0 15px #ECBF0F;
 }
 
 .card-1 {
@@ -194,6 +204,7 @@ button:active {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    height: 100%;
 }
 
 .card-content img {

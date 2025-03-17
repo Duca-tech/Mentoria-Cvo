@@ -1,27 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .modal {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-    overflow-x: hidden;
-
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  overflow: hidden;
+  z-index: 1000;
+  display: flex; /* Centraliza verticalmente */
+  flex-direction: column;
+  padding: 15px 35px;
 }
-  
+
 .modal-content {
-    background-color: #ECBF0F;
-    width: 80%;
-    height: 95%;
-    padding: 0px;
-    display: flex; /* Ativa o flexbox */
-    align-items: stretch; /* Alinha os itens verticalmente */
-    overflow: hidden; /* Garante que a imagem não vaze do contêiner */
+  background-color: #ECBF0F;
+  width: 80%;
+  max-width: 2500px; /* Define um limite para telas grandes */
+  height: 90%;
+  max-height: 1200px; /* Evita que a modal fique muito alta */
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  /* transform: translate(-50%, -50%); */
+}
+
+.modal-header{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 80%;
+  
+}
+.modal-header button{
+  background-color:#ECBF0F;
+  color: white;
+  border: none;
 }
 
   
@@ -72,20 +93,21 @@
 
 
   .modal-img {
-    width: 30%;
+    width: 85%;
     height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .modal-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém o enquadramento correto sem distorção */
+    display: block;
+    border-radius: 10px 0 0 10px; /* Mantém os cantos arredondados na esquerda */
 }
-
 .icons{
   display: flex;
   flex-direction: row;
